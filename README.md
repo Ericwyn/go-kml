@@ -1,8 +1,7 @@
 # go-kmz
 export nmea log to KMZ file, which you can open with googleMap
 
-## 使用示例
-将一个 Location，输出成 kml 文件
+## demo
 
 ```go
 func main() {
