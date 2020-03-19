@@ -1,5 +1,9 @@
 # go-kml
-create a kml file with location message list
+create a kml file(the file type which unzip from .kmz) with location message list
+
+and then you can use GoogleEarth to visit all location track points
+
+and if you want to parse the location message from nmea log, you can find the project [go-nema]()
 
 ## demo
 
