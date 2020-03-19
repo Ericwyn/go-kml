@@ -5,7 +5,7 @@ create a kml file with location message list
 
 ```go
 func main() {
-    locations := []kmz.Location {
+    locations := []kml.Location {
         {
             Longitude:115.0382390,
             Latitude:23.5106791,

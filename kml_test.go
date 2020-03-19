@@ -1,12 +1,12 @@
 package go_kml
 
 import (
-	"github.com/Ericwyn/go-kmz/kmz"
+	"github.com/Ericwyn/go-kml/kml"
 	"testing"
 )
 
 func TestRanderNmeaToKml(t *testing.T) {
-	locations := []kmz.Location{
+	locations := []kml.Location{
 		{
 			Longitude: 115.0382390,
 			Latitude:  23.5106791,
@@ -26,5 +26,5 @@ func TestRanderNmeaToKml(t *testing.T) {
 			Time:      "20190310 09:12:10",
 		},
 	}
-	kmz.Rander(locations, kmz.ColorRed)
+	kml.Rander(locations, kml.ColorRed)
 }

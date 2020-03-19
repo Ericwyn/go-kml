@@ -12,6 +12,16 @@ type Location struct {
 	Altitude  float64 // 高度
 
 	Time string // 时间
+
+	Description string // 描述
+}
+
+func (obj Location) String() string {
+	return fmt.Sprintln(
+		"Longitude:", obj.Longitude, "\n",
+		"Latitude:", obj.Latitude, "\n",
+		"Altitude:", obj.Altitude, "\n",
+		"time", obj.Time)
 }
 
 type Placemark struct {
@@ -252,7 +262,7 @@ func randerPlacemark(locations []Location, color string) string {
 			"位置"+strconv.Itoa(i)+" "+location.Time)
 
 		// 介绍？
-		tempModel = randerModel(tempModel, placeMarkModel_key_description, "")
+		tempModel = randerModel(tempModel, placeMarkModel_key_description, location.Description)
 
 		res += tempModel + "\n"
 	}
