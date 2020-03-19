@@ -1,5 +1,5 @@
-# go-kmz
-export nmea log to KMZ file, which you can open with googleMap
+# go-kml
+create a kml file with location message list
 
 ## demo
 

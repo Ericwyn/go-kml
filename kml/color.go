@@ -1,4 +1,4 @@
-package kmz
+package kml
 
 const ColorRed = "ff0000ff"
 const ColorYellow = "7f00ffff"

@@ -1,4 +1,4 @@
-package go_kmz
+package go_kml
 
 import (
 	"github.com/Ericwyn/go-kmz/kmz"

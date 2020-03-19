@@ -1,4 +1,4 @@
-package kmz
+package kml
 
 import (
 	"fmt"
