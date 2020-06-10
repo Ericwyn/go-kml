@@ -11,6 +11,9 @@ type Location struct {
 	Longitude float64 // 经度
 	Altitude  float64 // 高度
 
+	Course float64 // 方向
+	Speed  float64 // 速度
+
 	Time string // 时间
 
 	Description string // 描述
