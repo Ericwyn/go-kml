@@ -1,8 +1,11 @@
 package go_kml
 
 import (
+	"github.com/Ericwyn/GoTools/date"
+	"github.com/Ericwyn/GoTools/file"
 	"github.com/Ericwyn/go-kml/kml"
 	"testing"
+	"time"
 )
 
 func TestRanderNmeaToKml(t *testing.T) {
@@ -26,5 +29,6 @@ func TestRanderNmeaToKml(t *testing.T) {
 			Time:      "20190310 09:12:10",
 		},
 	}
-	kml.Rander(locations, kml.ColorRed)
+	kmlString := kml.Rander(locations, kml.ColorMagenta, "test-tracking")
+	file.WriteAppend("track_"+date.Format(time.Now(), "yyyyMMdd_HHmmss")+".kmz", []string{kmlString})
 }

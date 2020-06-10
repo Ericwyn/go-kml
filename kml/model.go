@@ -3,10 +3,12 @@ package kml
 const kmlModel_key_lines = `${lines}`
 const kmlModel_key_points = `${points}`
 const kmlModel_key_lines_color = `${color}`
+const kmlModel_key_track_name = `${track_name}`
+
 const kmlModel = `<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
     <Document>
-        <name><![CDATA[track1]]></name>
+        <name><![CDATA[` + kmlModel_key_track_name + `]]></name>
         <visibility>1</visibility>
         <open>1</open>
         <Snippet></Snippet>

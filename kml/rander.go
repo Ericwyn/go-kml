@@ -46,7 +46,7 @@ func randerModel(model string, key string, randerString string) string {
 	return model
 }
 
-func Rander(locations []Location, color string) string {
+func Rander(locations []Location, color string, trackName string) string {
 	// 先载入 model
 	model := kmlModel
 	// 渲染线条颜色
@@ -60,6 +60,8 @@ func Rander(locations []Location, color string) string {
 	pointXml := randerPlacemark(locations, color)
 	model = randerModel(model, kmlModel_key_points, pointXml)
 
+	// 渲染 track 名称
+	model = randerModel(model, kmlModel_key_track_name, trackName)
 	return model
 }
 
