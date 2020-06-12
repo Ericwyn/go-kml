@@ -29,6 +29,6 @@ func main() {
             Time: "20190310 09:12:10",
         },
     }
-    kmz.Rander(locations, kmz.ColorRed)
+    kmlString := kml.Rander(locations, kml.ColorRed, "track-name")
 }
 ```

@@ -30,5 +30,5 @@ func TestRanderNmeaToKml(t *testing.T) {
 		},
 	}
 	kmlString := kml.Rander(locations, kml.ColorMagenta, "test-tracking")
-	file.WriteAppend("track_"+date.Format(time.Now(), "yyyyMMdd_HHmmss")+".kmz", []string{kmlString})
+	file.WriteAppend("track_"+date.Format(time.Now(), "yyyyMMdd_HHmmss")+".kml", []string{kmlString})
 }
