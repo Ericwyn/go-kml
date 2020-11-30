@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func TestRanderNmeaToKml(t *testing.T) {
+func TestRenderNmeaToKml(t *testing.T) {
 	locations := []kml.Location{
 		{
 			Longitude: 115.0382390,
@@ -29,6 +29,6 @@ func TestRanderNmeaToKml(t *testing.T) {
 			Time:      "20190310 09:12:10",
 		},
 	}
-	kmlString := kml.Rander(locations, kml.ColorMagenta, "test-tracking")
+	kmlString := kml.Render(locations, kml.ColorMagenta, "test-tracking")
 	file.WriteAppend("track_"+date.Format(time.Now(), "yyyyMMdd_HHmmss")+".kml", []string{kmlString})
 }
