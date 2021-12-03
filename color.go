@@ -1,4 +1,4 @@
-package kml
+package go_kml
 
 const ColorRed = "ff0000ff"
 const ColorYellow = "7f00ffff"

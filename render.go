@@ -1,4 +1,4 @@
-package kml
+package go_kml
 
 import (
 	"fmt"

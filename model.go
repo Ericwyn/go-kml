@@ -1,4 +1,4 @@
-package kml
+package go_kml
 
 const kmlModel_key_lines = `${lines}`
 const kmlModel_key_points = `${points}`

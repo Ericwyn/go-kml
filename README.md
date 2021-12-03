@@ -5,9 +5,16 @@ and then you can use GoogleEarth to visit all location track points
 
 and if you want to parse the location message from nmea log, you can find the project [go-nema]()
 
-## demo
+## install
 
+```shell
+go get github.com/Ericwyn/go-kml
+```
+
+## demo code
 ```go
+import kml "github.com/Ericwyn/go-kml"
+
 func main() {
     locations := []kml.Location {
         {
